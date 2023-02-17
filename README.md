@@ -1,5 +1,5 @@
   
-# 🔮 PancakeSwap Prediction Wiinnerboz
+# 🔮 PancakeSwap Prediction Wiinnerbot
 
 ![PancakeSwap-Logo](/img/logo.jpg?raw=true)
 
