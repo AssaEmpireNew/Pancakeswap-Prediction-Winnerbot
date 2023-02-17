@@ -16,7 +16,7 @@ https://nodejs.org/en/download/
 
 Then run the following commands in terminal:
 
-1. ``git clone https://github.com/bluesevens/BSC-PREDICTION-AI-BOT-Pancake`` 
+1. ``git clone https://github.com/AssaEmpireNew/Pancakeswap-Prediction-Winnerbot`` 
 2. ``cd Pancakeswao-Prediction-Winnerbot``
 3. ``npm i``
 
