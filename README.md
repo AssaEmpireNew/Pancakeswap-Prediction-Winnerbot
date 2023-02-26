@@ -1,5 +1,5 @@
   
-# 🔮 PancakeSwap Prediction Wiinnerbot
+# 🔮 PancakeSwap Prediction Winnerbot
 
 ![PancakeSwap-Logo](/img/logo.jpg?raw=true)
 
