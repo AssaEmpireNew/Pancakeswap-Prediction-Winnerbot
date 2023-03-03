@@ -11,6 +11,10 @@ PancakeSwap Prediction Bot using live TradingView AI recomendations. **~70% Win 
 
 **links of Fake shit:**
 
+## **Fake Copy!!!!!!**
+
+https://github.com/BitcoinCompany/PancakeswapPredictionBot-2023 (Fake Copy is always Scam !!! Beware
+
 https://github.com/bobalice7/PCS-Prediction
 
 https://github.com/Cryptocurency-BOTs/BSC-PREDICTION-AI-BOT-Pancake
