@@ -19,7 +19,7 @@ https://github.com/bobalice7/PCS-Prediction
 
 https://github.com/Cryptocurency-BOTs/BSC-PREDICTION-AI-BOT-Pancake
 
-Pls do not scam u... 
+Pls do not scam u...  
 
 ## 🐰⚡ Installatiom
 
